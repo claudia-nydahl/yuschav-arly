@@ -1,11 +1,11 @@
 <?php
 /* Set e-mail recipient */
-$myemail  = "claudia.nydahl@gmail.com";
+$myemail  = "you@domain.com";
 
 /* Check all form inputs using check_input function */
-$name = check_input($_POST['name'], "Enter your name");
+$yourname = check_input($_POST['name'], "Enter your name");
 $email    = check_input($_POST['email']);
-$message = check_input($_POST['message'], "Write your comments");
+$message = check_input($_POST['message'], "Write your message");
 
 /* If e-mail is not valid show error message */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
@@ -20,13 +20,19 @@ Your contact form has been submitted by:
 
 Name: $yourname
 E-mail: $email
-URL: $website
+
+Message:
+$message
 
 End of message
 ";
 
 /* Send the message using mail() function */
-mail($myemail, $name, $message);
+mail($myemail, $message);
+
+/* Redirect visitor to the thank you page */
+header('Location: thanks.htm');
+exit();
 
 /* Functions we used */
 function check_input($data, $problem='')

@@ -7,7 +7,7 @@
 			</div>
 		</section>
 
-		<section class="col-dk-1 md-hidden sm-hidden tall-750"></section>
+		<section class="col-dk-1 md-hidden sm-hidden tall-600"></section>
 
 		<?php
    			if(have_posts()):

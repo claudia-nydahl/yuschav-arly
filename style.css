@@ -133,10 +133,11 @@ a {
 /* basic text styles */
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 h1 {
-  font-size: 4em;
+  font-size: 3.6em;
   text-transform: uppercase;
   font-weight: 700;
   /*margin-top: 50px;*/
@@ -186,12 +187,12 @@ p {
   	font-weight: 100;
   	text-transform: uppercase;
   	letter-spacing: 5px;
-  	background-color: rgba(250,250,250,0.9);
+  	background-color: #ffffff;
   	position: absolute;
   	top: 62px;
 	right: 0;
 	padding: 10px;
-	width: 28%;
+	width: 26%;
 	display: none;
 }
 .drop-menu li {
@@ -439,7 +440,7 @@ textarea {
   padding-right: 0; }
 
 .portfolio-section {
-	padding: 0 60px;
+	padding: 0 50px;
 }
 
 html {
@@ -452,9 +453,9 @@ mark {
 	margin-top: 50px;
 }
 .rpwwt-post-title {
-	font-size: 30px;
+	font-size: 3em;
 /*	color: #0787C4;*/
-	color: #414042;
+	color: #000000;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -527,7 +528,7 @@ div.rpwwt-post-excerpt {
     	padding-right: 40px;
     }
     .page-content {
-    	padding-left: 20px;
+    	padding-left: 30px;
     }
     h1 {
     	font-size: 3em;
