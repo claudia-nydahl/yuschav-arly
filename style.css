@@ -192,8 +192,9 @@ p {
   	top: 62px;
 	right: 0;
 	padding: 10px;
-	width: 26%;
+	width: 40%;
 	display: none;
+	z-index: 9999;
 }
 .drop-menu li {
 	display: block;
@@ -636,5 +637,15 @@ div.rpwwt-post-excerpt {
 	}
 	.hidden-dk {
 		display: block;
+	}
+}
+
+@media screen and (min-width: 180px) and (max-width: 405px) {
+	.bold {
+		font-size: 2em;
+		width: 285px;
+	}
+	.menu-icon {
+		margin-top: -48px;
 	}
 }
